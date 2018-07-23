@@ -13,7 +13,9 @@ git flow是一套基于git的工作流程。Git flow 可以工作在 OSX, Linux 
 
 ## 3. git-flow中的分支
 ### （1）主分支：
-![主分支](/imgs/1.png)
+![主分支](./imgs/1.png)
+
+
 * master分支 
 master分支上的代码是可以随时发布到生存环境中的代码(production-ready)，每次提交到master的代码都必须打上标签标示版本号。master分支的操作权限应该由专门的人负责。
 * develop分支  
@@ -29,9 +31,7 @@ master分支上的代码是可以随时发布到生存环境中的代码(product
 
 ### （4）用于维护的分支 Hotfix
 发布后的维护工作或者紧急问题的快速修复也需要使用一个独立的分支。这是唯一一种可以直接基于master创建的分支。一旦问题被修复了，所做的改动应该被合并入master和develop分支（或者用于当前发布的分支）。在这之后，master上还要使用更新的版本号打好标签。
-![主分支](/imgs/4.png)
-
-
+![主分支](/imgs/4.png)  
 
 ## 4. 
 我们能看到feature branch最明显的两个好处是：
