@@ -1,3 +1,4 @@
+https://blog.csdn.net/u012562943/article/details/79754587
 # git-flow
 
 ## 1. 什么是git-flow?
@@ -15,8 +16,7 @@ git flow是一套基于git的工作流程。Git flow 可以工作在 OSX, Linux 
 ### （1）主分支：
 ![主分支](./imgs/1.png)
 
-
-* master分支 
+* master分支   
 master分支上的代码是可以随时发布到生存环境中的代码(production-ready)，每次提交到master的代码都必须打上标签标示版本号。master分支的操作权限应该由专门的人负责。
 * develop分支  
 我们称为开发分支，又称集成分支(integration branch)，辅助分支完成自己的开发之后都会合并到develop分支，确定要把当前已经集成的功能发布一个版本的时候，就需要把devlop分支合并到master分支（下面会介绍中间其实还有一个release分支），并打上带版本号的标签。
