@@ -13,3 +13,32 @@
   * 时刻保持数据完整
 
 # Git 仓库
+![git 仓库](./git-imgs/1.png)
+
+# Git 的基本流程
+* 在工作区修改内容
+* 对修改后的文件进行快照， 然后保存到暂存区
+* 提交更新，将保存在暂存区的文件快照永久存储到git目录中
+
+# .git目录介绍
+* hooks  --git 相关钩子
+* Info  --包含一些仓库的信息
+* Objects --git 本地仓库里的所有对象（commits, trees, blobs, tags）
+* refs  --记录项目中每个分支对应的commit
+* logs --日志信息
+* configs --配置信息
+* description -- 项目描述
+* index -- 暂存区的内容
+* HEAD  --当前分支
+
+# 暂存区
+git ls-files --stage
+![暂存区](./git-imgs/2.png)
+
+# Git objects
+git cat-file -p commitid
+* Blobs 只包含文件内容
+* Trees 目录的信息，包含了此目录下的blobs
+* Commits一个提交的所有元数据
+* Tags  tag用于给某个上述类型的对象指配一个便于开发者记忆的名字, 通常用于某次commit
+![objects](./git-imgs/3.png)
