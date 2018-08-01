@@ -69,3 +69,45 @@ git rebase
 
 git merge应该只用于为了保留一个有用的，语义化的准确的历史信息，而希望将一个分支的整个变更集成到另外一个branch时使用。这样形成的清晰版本变更图有着重要的价值。
 git rebase 当你想保持当前分支历史记录的不受影响。注意不要在公共仓库
+
+# git checkout
+* git checkout file 从暂存区中读取某个文件
+* git checkout branch 切到某个分支
+* git checkout -b <new branch name> <base branch> 新建分支并切换到这个分支
+
+# Git reset
+* git reset - -soft <commit> 版本库文件回到某个commit，暂存区和本地文件保存当前状态
+* git reset - -mixed <commit>  版本库和暂存区回到某个commit，本地文件依然保存当前状态
+* git reset - -hard <commit> 版本库、暂存区、本地代码，都会滚到某个commit
+   
+# git cherry-pick
+* git cherry-pick 可以选择某个或某几个commit进行操作
+
+# git log
+* git log -n  展示前n条数据
+* git log -p 展示每次提交详细的代码变化
+* git log —pretty=oneline 用一行展示每次提交的commit id和注释信息
+* git log  —graph 展示分支信息
+
+# git diff
+* git diff <filename>  工作区与暂存区的差
+* git diff <branch> <filename> 工作区与branch的差别
+* git diff - -cached <filename> 暂存区与本地仓库的差别
+* git diff - -cached <commit> <filename> 暂存区与某次commit的差别
+* git diff <commit> <filename> 工作区与某次commit的差别
+* git diff <commit> <commit> 比较两次commit
+
+# git rm
+* git rm file-path 删除工作区、暂存区、分支上的文件
+* git rm - -cached file-path  删除暂存区、分支上的文件，保留本地文件
+
+# git stash
+保存当前工作进度，会把暂存区和工作区的改动保存起来。执行完这个命令后，在运行git status命令，就会发现当前是一个干净的工作区，没有任何改动。使用git stash save 'message...'可以添加一些注释
+* git stash list
+* git stash pop 恢复最新的进度到工作区。git默认会把工作区和暂存区的改动都恢复到工作区, 删除当前进度
+* git stash pop --index 恢复最新的进度到工作区和暂存区。（尝试将原来暂存区的改动还恢复到暂存区）, 删除当前进度
+* git stash apply 除了不删除恢复的进度之外，其余和git stash pop 命令一样。
+* git stash drop 删除一个存储的进度。如果不指定stash_id，则默认删除最新的存储进度。
+* git stash clear 删除所有存储的进度。
+
+# 没了
