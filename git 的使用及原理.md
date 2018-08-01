@@ -12,7 +12,7 @@
   * 时刻保持数据完整
 
 # Git 仓库
-![git 仓库](./git-imgs/1.png)
+![git 仓库](./git-imgs/1.png)  
 
 # Git 的基本流程
 * 在工作区修改内容
