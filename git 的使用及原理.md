@@ -81,7 +81,9 @@ git rebase 当你想保持当前分支历史记录的不受影响。注意不要
 * git reset - -hard <commit> 版本库、暂存区、本地代码，都会滚到某个commit
    
 # git cherry-pick
-* git cherry-pick 可以选择某个或某几个commit进行操作
+拣选指令----git cherry-pick 其含义就是从众多的提交中选出一个提交应用在当前的工作分支中.该命令需要提供一个提交ID作为参数.操作过程相当于将该提交,导出为补丁文件,然后在当前HEAD上重放,形成无论内容还是提交说明都一致的提交.
+
+git cherry-pick用于把另一个本地分支的commit修改应用到当前分支。
 
 # git log
 * git log -n  展示前n条数据
