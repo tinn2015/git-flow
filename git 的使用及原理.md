@@ -44,6 +44,9 @@ git cat-file -p commitid
 
 ![objects](./git-imgs/4.png)
 
+# Git commits  
+![commits](./git-imgs/commits.png)
+
 # 常用命令
 ![命令](./git-imgs/3.jpg)
 
